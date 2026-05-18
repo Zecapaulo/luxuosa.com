@@ -1316,6 +1316,110 @@ text-decoration: none;
     .product-img-wrapper {
     padding: 0px 0;
 }
+/* ========================================================================= */
+    /* SEÇÃO: COLEÇÃO DE INVERNO (INSTAGRAM SECTION)                             */
+    /* ========================================================================= */
+    .instagram-section {
+        padding: 40px 0 !important;
+        background-color: #ffffff;
+    }
+
+    .instagram-section .feed-title {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .instagram-section .titulo h5 {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        padding: 0 20px;
+        color: #666;
+    }
+
+    .instagram-section .titulo h5 br {
+        display: none; /* Remove a quebra de linha forçada no mobile */
+    }
+
+    /* Container das Cartas */
+    .instagram-wrapper {
+        margin-top: 2rem !important;
+        padding-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: visible; /* Garante que a rotação das pontas não seja cortada */
+    }
+
+    /* Redimensionamento proporcional das cartas para caber na tela mobile */
+    .instagram-section .insta-card {
+        width: 85px;         /* Proporcional para telas de até 360px-410px */
+        height: 130px;       /* Mantém a proporção idêntica ao desktop */
+        margin: 0 -12px;     /* Ajuste de sobreposição para o novo tamanho */
+        border-radius: 8px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    }
+
+    /* Suavização das translações verticais para a escala mobile */
+    .instagram-section .card-1 { transform: rotate(-15deg); }
+    .instagram-section .card-2 { transform: rotate(-5deg) translateY(-4px); }
+    .instagram-section .card-3 { transform: rotate(8deg) translateY(-12px); }
+    .instagram-section .card-4 { transform: rotate(-8deg) translateY(4px); }
+    .instagram-section .card-5 { transform: rotate(12deg); }
+
+    /* Reset e Ajuste do Botão (Evita que vire o círculo compacto do Hero) */
+    .instagram-section .actions-wrapper {
+        margin-top: 2.5rem !important;
+        padding: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+        width: 100%;
+    }
+
+    .instagram-section .actions-wrapper .btn-pill {
+        width: auto !important;
+        height: auto !important;
+        font-size: 0.85rem !important;
+        font-family: 'Inter', sans-serif;
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem !important;
+        border-radius: 50px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 1rem !important;
+        background-color: var(--btn-lilac) !important;
+        color: var(--btn-dark) !important;
+    }
+
+    /* Remove o ícone de coroa/sacola injetado pelas regras gerais do mobile */
+    .instagram-section .actions-wrapper .btn-pill::before {
+        display: none !important;
+    }
+
+    /* Força a exibição correta do círculo da seta */
+    .instagram-section .actions-wrapper .btn-shop .icon-circle {
+        display: flex !important;
+        background-color: var(--btn-dark) !important;
+        color: var(--text-light) !important;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+    .instagram-section{
+        display: none;
+    }
+    .explore-badge-dark {
+    top: 76%;
+    right: 5%;
+}
+.play-btn{
+    display: none;
+
+}
+
 }
 /* ---------- Telas muito pequenas ---------- */
 @media (max-width: 380px) {
